@@ -1,23 +1,66 @@
-header div.topo {
-  background-image: url("../img/icons/logo-alurageek.svg");
-  background-repeat: no-repeat;
+div.topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-position: 152px center;
 }
 
-@media screen and (max-width: 720px) {
-  div.topo {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    background-position: 32px center;
+div.topo div.esquerda {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 670px;
+}
+
+div.topo div.esquerda div.logo {
+  height: 50px;
+  width: 176px;
+}
+
+div.topo div.esquerda div.logo img {
+  width: 100%;
+}
+
+div.topo div.esquerda input.barra-pesquisa {
+  color: var(--cinza);
+  background: var(--background-barra-pesquisa)
+    url("../img/icons/lupa-pequena.svg") no-repeat;
+  background-position: 380px center;
+  border-radius: 20px;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 1.2rem 1.6rem;
+  width: 393px;
+}
+
+div.topo button.botao-login {
+  color: var(--azul-escuro);
+  background: var(--branco);
+  border: 1px solid var(--azul-escuro);
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 1.6rem 7rem;
+}
+
+@media screen and (max-width: 768px) {
+  div.topo div.esquerda {
+    width: 430px;
   }
 
-  div.topo button.topo__botao-login {
-    color: var(--azul-escuro);
-    background: var(--branco);
-    border: 2px solid var(--azul-escuro);
-    font-size: 1.4rem;
-    font-weight: 500;
-    padding: 1.2rem 3.75rem;
+  div.topo div.esquerda div.logo {
+    height: 28px;
+    width: 100px;
+  }
+
+  div.topo div.esquerda input.barra-pesquisa {
+    background-position: 260px center;
+    width: 272px;
+  }
+  div.topo button.botao-login {
+    border: 1px solid var(--azul-escuro);
+    font-weight: 600;
+    padding: 1.2rem 6.4rem;
   }
 }
 
@@ -26,6 +69,8 @@ header div.topo {
     border: none;
     background: var(--branco);
     margin-left: 3.85rem;
-    background-position: 16px center;
+  }
+  div.topo button.topo__botao-login {
+    padding: 1.2rem 3.75rem;
   }
 }
