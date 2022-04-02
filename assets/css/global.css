@@ -10,9 +10,10 @@
 }
 
 html {
+  color: var(--preto);
   font-size: 62.5%;
   font-family: "Raleway", sans-serif;
-  color: var(--preto);
+  font-weight: 700;
 }
 
 .container {
