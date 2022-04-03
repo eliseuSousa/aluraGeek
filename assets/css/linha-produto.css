@@ -29,6 +29,7 @@ section.linha-produto div.produtos {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 section.linha-produto div.produtos div.descricao h2.titulo-produto {
@@ -48,7 +49,8 @@ section.linha-produto div.produtos div.descricao a.link-produto {
   text-decoration: none;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
+
   section.linha-produto div.produtos div.produto div.imagem-produto {
     width: 164px;
   }
@@ -60,4 +62,16 @@ section.linha-produto div.produtos div.descricao a.link-produto {
   section.linha-produto div.produtos div.produto:nth-child(n + 5) {
     display: none;
   }
+}
+
+@media screen and (max-width: 360px) {
+
+  section.linha-produto div.produtos div.produto:nth-child(-n + 2) {
+    margin-bottom: 1.6rem;
+  }
+
+  section.linha-produto div.produtos div.produto div.imagem-produto {
+    width: 156px;
+  }  
+
 }
