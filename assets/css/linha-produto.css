@@ -1,0 +1,43 @@
+section.linha-produto {
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
+}
+
+section.linha-produto div.topo h2.titulo {
+  font-size: 3.2rem;
+  margin-bottom: 1.6rem;
+}
+
+section.linha-produto div.topo button.botao-ver-tudo {
+  color: var(--azul-escuro);
+  background: var(--branco) url('../img/icons/seta.svg') no-repeat right center;
+  border: none;
+  width: 100px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  font-family: "Raleway", sans-serif;
+  text-align: left;
+}
+
+section.linha-produto div.produtos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section.linha-produto div.produtos div.descricao h2.titulo-produto {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding-top: .8rem;
+}
+
+section.linha-produto div.produtos div.descricao p.preco-produto {
+ font-size: 1.6rem;
+  padding: .8rem 0;
+}
+
+section.linha-produto div.produtos div.descricao a.link-produto {
+  color: var(--azul-escuro);
+  font-size: 1.6rem;
+  text-decoration: none;
+}

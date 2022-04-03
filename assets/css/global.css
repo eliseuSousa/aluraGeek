@@ -18,7 +18,6 @@ html {
 
 .container {
   padding: 3.2rem 15.2rem;
-  color: var(--branco);
 }
 
 @media screen and (max-width: 768px) {
