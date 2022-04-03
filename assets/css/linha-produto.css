@@ -17,6 +17,12 @@ section.linha-produto div.topo button.botao-ver-tudo {
   font-size: 1.6rem;
   font-family: "Raleway", sans-serif;
   text-align: left;
+  transition: all .3s;
+}
+
+section.linha-produto div.topo button.botao-ver-tudo:hover {
+  cursor: pointer;
+  font-size: 1.8rem;
 }
 
 section.linha-produto div.produtos {
@@ -40,4 +46,18 @@ section.linha-produto div.produtos div.descricao a.link-produto {
   color: var(--azul-escuro);
   font-size: 1.6rem;
   text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+  section.linha-produto div.produtos div.produto div.imagem-produto {
+    width: 164px;
+  }
+
+  section.linha-produto div.produtos div.produto div.imagem-produto img {
+    width: 100%;
+  }
+
+  section.linha-produto div.produtos div.produto:nth-child(n + 5) {
+    display: none;
+  }
 }
