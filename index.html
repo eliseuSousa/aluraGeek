@@ -296,8 +296,17 @@
 
         <form action="" class="formulario">
           <h2 class="titulo">Fale conosco</h1>
-          <input type="text" class="nome">
-          <input type="textarea" class="mensagem">
+
+          <div class="text-input">
+            <input type="text" class="nome" required>
+            <label for="nome">Nome</label>
+          </div>
+
+          <div class="text-input">
+            <textarea name="" class="mensagem" required></textarea>
+            <label for="mensagem">Escreva sua mensagem</label>
+          </div>
+
           <button class="botao-submit">Enviar mensagem</button>
         </form>
       </section>

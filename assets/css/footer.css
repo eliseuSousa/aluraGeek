@@ -40,12 +40,17 @@ footer.footer section.conteudo form.formulario h2.titulo{
   margin-bottom: .8rem;
 }
 
-footer.footer section.conteudo form.formulario input{
+footer.footer section.conteudo form.formulario div.text-input {
+  position: relative;
+}
+
+footer.footer section.conteudo form.formulario input, footer.footer section.conteudo form.formulario textarea {
   border: none;
   border-radius: .4rem;
   border-bottom: 1px solid var(--cinza);
   padding: .8rem 1.2rem;
   width: 30.6rem;
+  transition: all .3s;
 }
 
 footer.footer section.conteudo form.formulario input.nome {
@@ -53,9 +58,41 @@ footer.footer section.conteudo form.formulario input.nome {
   margin-bottom: 1.6rem;
 }
 
-footer.footer section.conteudo form.formulario input.mensagem {
+footer.footer section.conteudo form.formulario textarea.mensagem {
   height: 7.4rem;
   margin-bottom: .6rem;
+  padding-top: 1.6rem;
+}
+
+footer.footer section.conteudo form.formulario input.nome:focus, footer.footer section.conteudo form.formulario textarea.mensagem:focus {
+  outline: 0;
+  border-bottom: 1px solid var(--azul-escuro);
+}
+
+footer.footer section.conteudo form.formulario input.nome:valid, footer.footer section.conteudo form.formulario textarea.mensagem:valid {
+  border-bottom: 1px solid var(--cinza);
+}
+
+footer.footer section.conteudo form.formulario label {
+  position: absolute;
+  color: var(--cinza);
+  font-size: 1.6rem;
+  font-weight: 400;
+  left: 1.2rem;
+  top: 1.6rem;
+  transition: all .3s;
+}
+
+footer.footer section.conteudo form.formulario input.nome:focus ~ label, footer.footer section.conteudo form.formulario textarea.mensagem:focus ~ label {
+  color: var(--azul-escuro);
+  top: -1px;
+  font-size: 1.2rem;
+}
+
+footer.footer section.conteudo form.formulario input.nome:valid ~ label, footer.footer section.conteudo form.formulario textarea.mensagem:valid ~ label {
+  color: var(--cinza);
+  top: -1px;
+  font-size: 1.2rem;
 }
 
 footer.footer section.conteudo form.formulario button.botao-submit {
