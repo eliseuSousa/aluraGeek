@@ -6,24 +6,15 @@ footer.footer {
 
 footer.footer section.conteudo {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
-footer.footer section.conteudo div.logo-alurageek {
-  height: 50px;
-  width: 176px;
-}
-
-footer.footer section.conteudo div.logo-alurageek img {
-  width: 100%;
+footer.footer section.conteudo div.links div.logo-alurageek-link {
+  display: none;  
 }
 
 footer.footer section.conteudo div.links {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 3.2rem;
 }
 
 footer.footer section.conteudo div.links a {
@@ -112,10 +103,26 @@ footer.footer section.conteudo form.formulario button.botao-submit {
     justify-content: space-between;
     flex-direction: row;
   }
+
+  footer.footer section.conteudo div.logo-alurageek{
+    display: none;
+  }
+
   footer.footer section.conteudo div.links {
     align-items: flex-start;
     margin-bottom: 0;
   }
+
+  footer.footer section.conteudo div.links div.logo-alurageek-link {
+   display: block;
+    height: 50px;
+    width: 176px;
+  }
+  
+  footer.footer section.conteudo div.links div.logo-alurageek-link img {
+    width: 100%;
+  }
+
   footer.footer section.conteudo div.links a {
     margin-top: 2.4rem;
   }
@@ -124,8 +131,13 @@ footer.footer section.conteudo form.formulario button.botao-submit {
   }  
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 375px){
   footer.footer section.conteudo {
     flex-direction: column;
+  }
+  footer.footer section.conteudo div.links {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3.2rem;
   }
 }

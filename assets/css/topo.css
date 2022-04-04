@@ -12,6 +12,10 @@ div.topo div.esquerda {
   width: 650px;
 }
 
+div.topo button.botao-pesquisa{
+  display: none;
+}
+
 div.topo div.esquerda div.logo {
   height: 50px;
   width: 176px;
@@ -64,11 +68,19 @@ div.topo button.botao-login {
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
+  div.topo div.esquerda {
+    width: auto;
+  }
+
+  div.topo div.esquerda input.barra-pesquisa {
+    display: none;
+  }
+
   div.topo button.botao-pesquisa {
-    border: none;
     background: var(--branco);
-    margin-left: 3.85rem;
+    border: none;
+    display: block;
   }
   div.topo button.botao-login {
     padding: 1.2rem 3.75rem;
