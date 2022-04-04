@@ -22,7 +22,7 @@ html {
 
 @media screen and (max-width: 768px) {
   .container {
-    padding: 1.6rem 3.2rem;
+    padding: 3.2rem;
   }
 }
 

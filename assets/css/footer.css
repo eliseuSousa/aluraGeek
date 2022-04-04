@@ -104,3 +104,28 @@ footer.footer section.conteudo form.formulario button.botao-submit {
   font-weight: 600;
   padding: 1.2rem 1.6rem;
 }
+
+ @media screen and (max-width: 768px) {
+  footer.footer section.conteudo {
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  footer.footer section.conteudo div.links {
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+  footer.footer section.conteudo div.links a {
+    margin-top: 2.4rem;
+  }
+  footer.footer section.conteudo form.formulario input, footer.footer section.conteudo form.formulario textarea {
+    width: 43.4rem;
+  }  
+}
+
+@media screen and (max-width: 360px){
+  footer.footer section.conteudo {
+    flex-direction: column;
+  }
+}
