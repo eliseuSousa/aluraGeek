@@ -1,67 +1,62 @@
-/* footer.footer {
+footer.footer {
   background: var(--azul-bebe);
-  display: flex;
-  align-items: center;
 }
 
 footer.footer section.conteudo {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 
-footer.footer section.conteudo div.links div.logo-alurageek-link {
-  display: none;  
+footer.footer section.conteudo div.logo-alurageek {
+  width: 17.6rem;
+  height: 5rem;
+}
+
+footer.footer section.conteudo div.logo-alurageek img {
+  width: 100%;
+  height: 100%;
 }
 
 footer.footer section.conteudo div.links {
   display: flex;
+  flex-direction: column;
+  height: 23.4rem;
+  justify-content: space-between;
 }
 
 footer.footer section.conteudo div.links a {
   color: var(--preto);
-  display: block;
   font-size: 1.6rem;
   font-weight: 500;
   text-decoration: none;
-  margin-top: 1.6rem;
 }
 
-footer.footer section.conteudo form.formulario h2.titulo{
+footer.footer section.conteudo form.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 56rem;
+}
+
+footer.footer section.conteudo form.formulario h2.titulo {
   font-size: 1.6rem;
-  margin-bottom: .8rem;
+}
+
+footer.footer section.conteudo form.formulario div.text-input input.nome, footer.footer section.conteudo form.formulario div.text-input textarea.mensagem {
+  border: none;
+  border-bottom: 1px solid var(--cinza);
+  border-radius: .4rem;
+  height: 5.6rem;
+  padding-left: 1.2rem;
+  width: 98%;
+}
+
+footer.footer section.conteudo form.formulario div.text-input textarea.mensagem {
+  padding-top: 1.8rem;
 }
 
 footer.footer section.conteudo form.formulario div.text-input {
   position: relative;
-}
-
-footer.footer section.conteudo form.formulario input, footer.footer section.conteudo form.formulario textarea {
-  border: none;
-  border-radius: .4rem;
-  border-bottom: 1px solid var(--cinza);
-  padding: .8rem 1.2rem;
-  width: 30.6rem;
-  transition: all .3s;
-}
-
-footer.footer section.conteudo form.formulario input.nome {
-  height: 4.8rem;
-  margin-bottom: 1.6rem;
-}
-
-footer.footer section.conteudo form.formulario textarea.mensagem {
-  height: 7.4rem;
-  margin-bottom: .6rem;
-  padding-top: 1.6rem;
-}
-
-footer.footer section.conteudo form.formulario input.nome:focus, footer.footer section.conteudo form.formulario textarea.mensagem:focus {
-  outline: 0;
-  border-bottom: 1px solid var(--azul-escuro);
-}
-
-footer.footer section.conteudo form.formulario input.nome:valid, footer.footer section.conteudo form.formulario textarea.mensagem:valid {
-  border-bottom: 1px solid var(--cinza);
 }
 
 footer.footer section.conteudo form.formulario label {
@@ -74,16 +69,23 @@ footer.footer section.conteudo form.formulario label {
   transition: all .3s;
 }
 
-footer.footer section.conteudo form.formulario input.nome:focus ~ label, footer.footer section.conteudo form.formulario textarea.mensagem:focus ~ label {
-  color: var(--azul-escuro);
-  top: -1px;
-  font-size: 1.2rem;
+footer.footer section.conteudo form.formulario div.text-input input.nome:focus, footer.footer section.conteudo form.formulario div.text-input textarea.mensagem:focus {
+  border-bottom: 1px solid var(--azul-escuro);
+  outline: 0;
 }
 
-footer.footer section.conteudo form.formulario input.nome:valid ~ label, footer.footer section.conteudo form.formulario textarea.mensagem:valid ~ label {
-  color: var(--cinza);
-  top: -1px;
+footer.footer section.conteudo form.formulario div.text-input input.nome:focus ~ label, footer.footer section.conteudo form.formulario div.text-input  textarea.mensagem:focus ~ label {
+  color: var(--azul-escuro);
   font-size: 1.2rem;
+  padding-top: .8rem;
+  top: -2px;
+}
+
+footer.footer section.conteudo form.formulario div.text-input input.nome:valid ~ label, footer.footer section.conteudo form.formulario div.text-input textarea.mensagem:valid ~ label {
+  color: var(--cinza);
+  font-size: 1.2rem;
+  padding-top: .8rem;
+  top: -2px;
 }
 
 footer.footer section.conteudo form.formulario button.botao-submit {
@@ -94,50 +96,6 @@ footer.footer section.conteudo form.formulario button.botao-submit {
   font-size: 1.4rem;
   font-weight: 600;
   padding: 1.2rem 1.6rem;
+  height: 5rem;
+  width: 16.5rem;
 }
-
- @media screen and (max-width: 768px) {
-  footer.footer section.conteudo {
-    align-items: flex-start;
-    width: 100%;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-
-  footer.footer section.conteudo div.logo-alurageek{
-    display: none;
-  }
-
-  footer.footer section.conteudo div.links {
-    align-items: flex-start;
-    margin-bottom: 0;
-  }
-
-  footer.footer section.conteudo div.links div.logo-alurageek-link {
-   display: block;
-    height: 50px;
-    width: 176px;
-  }
-  
-  footer.footer section.conteudo div.links div.logo-alurageek-link img {
-    width: 100%;
-  }
-
-  footer.footer section.conteudo div.links a {
-    margin-top: 2.4rem;
-  }
-  footer.footer section.conteudo form.formulario input, footer.footer section.conteudo form.formulario textarea {
-    width: 43.4rem;
-  }  
-}
-
-@media screen and (max-width: 375px){
-  footer.footer section.conteudo {
-    flex-direction: column;
-  }
-  footer.footer section.conteudo div.links {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 3.2rem;
-  }
-} */
