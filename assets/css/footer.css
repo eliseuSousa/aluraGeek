@@ -140,3 +140,21 @@ footer.footer section.conteudo form.formulario button.botao-submit {
   }
 
 }
+
+@media screen and (max-width:375px) {
+  
+  footer.footer section.conteudo {
+    flex-direction: column;
+  }
+
+  footer.footer section.conteudo form.formulario {
+    width: auto;
+  }
+
+  footer.footer section.conteudo div.links {
+    align-items: center;
+    margin-bottom: 3.2rem;
+  }
+
+
+}
