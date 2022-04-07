@@ -24,6 +24,10 @@ footer.footer section.conteudo div.links {
   justify-content: space-between;
 }
 
+footer.footer section.conteudo div.links div.logo-alurageek-link {
+  display: none;
+}
+
 footer.footer section.conteudo div.links a {
   color: var(--preto);
   font-size: 1.6rem;
@@ -98,4 +102,41 @@ footer.footer section.conteudo form.formulario button.botao-submit {
   padding: 1.2rem 1.6rem;
   height: 5rem;
   width: 16.5rem;
+}
+
+@media screen and (max-width:768px){
+
+  footer.footer section.conteudo form.formulario {
+    justify-content: flex-start;
+  }
+
+  footer.footer section.conteudo form.formulario h2.titulo, footer.footer section.conteudo form.formulario textarea.mensagem{
+    margin-bottom: .8rem;
+  }
+  footer.footer section.conteudo form.formulario div.text-input input.nome{
+    margin-bottom: 1.6rem;
+  }  
+
+  footer.footer section.conteudo div.logo-alurageek {
+    display: none;
+  }
+
+  footer.footer section.conteudo div.links {
+    height: 30rem;
+  }
+  footer.footer section.conteudo div.links div.logo-alurageek-link {
+    display: block;
+    width: 17.6rem;
+    height: 5rem;
+  }
+
+  footer.footer section.conteudo div.links div.logo-alurageek-link img {
+    width: 100%;
+    height: 100%;
+  }
+
+  footer.footer section.conteudo form.formulario {
+    width: 43.4rem;
+  }
+
 }
