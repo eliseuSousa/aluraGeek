@@ -53,7 +53,7 @@ section.hero div.destaques button.botao-destaque {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   section.hero div.banner {
     height: 230px;
   }

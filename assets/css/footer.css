@@ -141,7 +141,7 @@ footer.footer section.conteudo form.formulario button.botao-submit {
 
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width: 425px) {
   
   footer.footer section.conteudo {
     flex-direction: column;

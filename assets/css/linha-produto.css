@@ -58,7 +58,7 @@ section.linha-produto div.produtos div.descricao a.link-produto {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   section.linha-produto div.produtos div.produto:nth-child(-n + 2) {
     margin-bottom: 1.6rem;
   }
