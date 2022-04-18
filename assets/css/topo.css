@@ -39,12 +39,22 @@ div.topo div.esquerda input.barra-pesquisa {
 }
 
 div.topo button.botao-login {
-  color: var(--azul-escuro);
   background: var(--branco);
   border: 1px solid var(--azul-escuro);
+  padding: 1.6rem 7rem;
+  transition: all 0.3s;
+}
+
+div.topo button.botao-login a {
   font-size: 1.4rem;
   font-weight: 400;
-  padding: 1.6rem 7rem;
+  color: var(--azul-escuro);
+  text-decoration: none;
+}
+
+div.topo button.botao-login:hover {
+  cursor: pointer;
+  background: var(--azul-hover);
 }
 
 @media screen and (max-width: 768px) {

@@ -1,0 +1,18 @@
+main.login {
+  background: var(--cinza2);
+}
+main.login footer.formulario-login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+main.login footer.formulario-login div.input {
+  position: relative;
+}
+
+main.login footer.formulario-login div.input label{
+  position: absolute;
+  left: 6px;
+  top: 6px;
+}
