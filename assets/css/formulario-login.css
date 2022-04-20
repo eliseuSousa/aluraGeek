@@ -33,7 +33,7 @@ main.login footer.formulario-login input.email, main.login footer.formulario-log
 
 main.login footer.formulario-login div.input label{
   color: var(--cinza);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 400;
   position: absolute;
   left: 12px;
@@ -52,4 +52,23 @@ main.login footer.formulario-login button.botao-entrar {
 
 main.login footer.formulario-login button.botao-entrar:hover {
   background: var(--azul-hover2);
+}
+
+@media screen and (max-width: 768px){
+  main.login footer.formulario-login {
+    margin: 3rem 0;
+  }
+  main.login footer.formulario-login button.botao-entrar {
+    width: 109px;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main.login footer.formulario-login div.input {
+    align-self: center;
+  }
+  main.login footer.formulario-login input.email, main.login footer.formulario-login input.senha {
+    width: 275px;
+  }
 }
