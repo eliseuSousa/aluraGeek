@@ -40,7 +40,7 @@ section.novo-produto div.add-imagem-produto button.upload-imagem {
   padding: 1.6rem;
 }
 
-section.novo-produto div.add-imagem-produto div.imagem{
+section.novo-produto div.add-imagem-produto div.imagem {
   width: 28.2rem;
   height: 15.2rem;
   background: var(--branco);
@@ -51,6 +51,10 @@ section.novo-produto div.add-imagem-produto div.imagem{
   align-items: center;
 }
 
+section.novo-produto div.add-imagem-produto div.imagem img.plus {
+  display: none;
+}
+
 section.novo-produto div.add-imagem-produto div.imagem p.mensagem {
   color: #6B6B6B;
   font-size: 1.4rem;
@@ -59,6 +63,10 @@ section.novo-produto div.add-imagem-produto div.imagem p.mensagem {
   margin-top: 1.6rem;
   max-height: 4rem;
   text-align: center;
+}
+
+section.novo-produto div.add-imagem-produto div.imagem p.adicionar {
+  display: none;
 }
 
 section.novo-produto form.registro-novo-produto div.text-input {
@@ -102,4 +110,71 @@ section.novo-produto form.registro-novo-produto button.submit {
   font-weight: 400;
   color: var(--branco);
   padding: 1.6rem 0;
+  transition: all .3s;
+}
+
+section.novo-produto form.registro-novo-produto button.submit:hover {
+  background: var(--azul-hover2);
+}
+
+@media screen and (max-width: 768px){
+  section.novo-produto {
+    min-width: 70.4rem;
+    min-height: 50.3rem;
+  }
+
+  section.novo-produto h1.titulo-principal {
+    font-size: 2.2rem;
+  }
+
+  section.novo-produto div.add-imagem-produto {
+    justify-content: start;
+  }
+
+  section.novo-produto div.add-imagem-produto h2.conjuncao {
+    margin: 0 .8rem;
+  }
+}
+
+@media screen and (max-width: 425px){
+  section.novo-produto {
+    min-width: 32.8rem;
+    min-height: 48.5rem;
+  }
+
+  section.novo-produto div.add-imagem-produto div.imagem {
+    width: 100%;
+    margin: 1.6rem 0;
+  }
+
+  section.novo-produto div.add-imagem-produto div.imagem img.ilustracao-upload {
+    display: none;
+  }
+
+  section.novo-produto div.add-imagem-produto div.imagem img.plus {
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  section.novo-produto div.add-imagem-produto div.imagem p.mensagem {
+    max-width: none;
+  }
+
+  section.novo-produto div.add-imagem-produto div.imagem p.araste {
+    display: none;
+  }
+
+  section.novo-produto div.add-imagem-produto div.imagem p.adicionar {
+    display: block;
+  }
+
+  section.novo-produto div.add-imagem-produto h2.conjuncao {
+    display: none;
+  }
+
+  section.novo-produto div.add-imagem-produto button.upload-imagem {
+    display: none;
+  }
+
 }
