@@ -32,10 +32,14 @@ section.hero div.destaques h2.paragrafo-destaque {
 section.hero div.destaques button.botao-destaque {
   background: var(--azul-escuro);
   border: none;
-  color: var(--branco);
   font-size: 1.6rem;
   font-weight: 400;
   padding: 1.6rem;
+}
+
+section.hero div.destaques button.botao-destaque a {
+  text-decoration: none;
+  color: var(--branco);
 }
 
 @media screen and (max-width: 768px) {
